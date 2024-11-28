@@ -1,0 +1,232 @@
+/* App.css */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
+  }
+  
+  .navbar {
+    width: 100%;
+    background-color: #fff;
+    color: #333;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+  }
+  
+  .navbar-logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    padding-top: 80px; /* Adjust for navbar height */
+    box-sizing: border-box;
+  }
+  
+  .video-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+    box-sizing: border-box;
+  }
+  
+  .video {
+    width: 95%;
+    height: 47%;
+    background-color: #000;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .button-container {
+    margin-bottom: 10%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 17%;
+  }
+  
+  .button {
+    padding: 10px 18px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  
+  .waiting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    height: 100vh;
+  }
+  
+  /* Ensure the navbar doesn't overlap with the content */
+  .container {
+    padding-top: 80px; /* Adjust the padding to leave space for the fixed navbar */
+  }
+  
+
+  /* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 15px 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Logo Image Styling */
+  .navbar-logo img {
+    width: 220px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    /* Add any other styles if necessary */
+  }
+  
+  /* Adjustments for different screen sizes */
+  @media (max-width: 768px) {
+    .navbar {
+      padding: 10px 20px;
+    }
+  
+    .navbar-logo img {
+      width: 170px; /* Adjust the width for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .navbar {
+      padding: 10px 15px;
+    }
+  
+    .navbar-logo img {
+      width: 150px; /* Further adjust the width for very small screens */
+    }
+  }
+
+
+
+
+  .text-container {
+    text-align: center;
+    margin-top: 7px;
+    background-color: #ffffff; /* White background for contrast */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for card effect */
+  }
+  
+  .text-container img {
+    width: 100%; /* Make the image responsive */
+    max-width: 250px; /* Limit the maximum width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Add rounded corners to the image */
+    margin-bottom: 15px; /* Add spacing below the image */
+    margin-top: 10px;
+  }
+  
+  .text-container p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .text-container p img {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 768px) {
+    .text-container p {
+      font-size: 16px;
+    }
+  
+    .text-container img {
+      max-width: 250px; /* Adjust max-width for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .text-container p {
+      font-size: 14px;
+    }
+  
+    .text-container img {
+      max-width: 200px; /* Further adjust max-width for very small screens */
+    }
+  }
+/* Styling for the "Contact and Follow us on" section */
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff; /* White background for the box */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for card effect */
+  max-width: 600px; /* Maximum width for the container */
+  margin: 20px auto; /* Center the container horizontally */
+  text-align: center; /* Center the text inside the container */
+}
+
+/* Styling for the paragraph inside the container */
+.contact-container p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 15px; /* Add some spacing below the text */
+}
+
+/* Flexbox to align icons horizontally */
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Space between the icons */
+  cursor: pointer;
+}
+
+/* Styling for the icons */
+.icon-container img {
+  width: 40px; /* Adjust the size of the icons */
+  height: 40px;
+}
+
+
+  
+  
